@@ -21,23 +21,44 @@ const person1 = {
 
   console.log(wiz);
 
- for(let w = 0; w< wizards.length; w ++ ){
-console.log(wizards[w]);
- }
+ //for(let w = 0; w< wizards.length; w ++ ){
+//console.log(wizards[w]);
+ //}
 
-getP = (id) => console.log(document.getElementById(id));
+ wiz.forEach((item, index)=>{
+  getP = (id) => {console.log(document.getElementById(id));
+  const one = document.getElementById("1");
+  const two = document.getElementById("2");
+  const three = document.getElementById("3");}
 
-const pOne = document.getElementById("1");
-console.log(pOne.innerHTML);
 
-setText = ()=> {const pOne = document.getElementById("1");
-pOne.innerHTML = person1.Firstname;
-pOne.style.color = person1.color;
-}
+  setText = ()=> {const one = document.getElementById("1");
+  one.innerHTML = wiz[0].Firstname;
+  one.style.color = wiz[0].color;
+  }
+  setText2 = ()=> {const two = document.getElementById("2");
+  two.innerHTML = wiz[1].Firstname;
+  two.style.color = wiz[1].color;
+  }
+  setText3 = ()=> {const three = document.getElementById("3");
+  three.innerHTML = wiz[2].Firstname;
+  three.style.color = wiz[2].color;
+  }
+  setText();
+  setText2();
+  setText3();
 
-setText();
+  //update 
 
-const pTwo = document.getElementById("2");
+})
+
+
+
+
+
+
+
+/*const pTwo = document.getElementById("2");
 console.log(pOne.innerHTML);
 
 setText2 = ()=> {const pTwo = document.getElementById("2");
@@ -55,4 +76,6 @@ pTree.innerHTML = person3.Firstname;
 pTree.style.color = person3.color;
 }
 
-setText3();
+setText3();*/
+
+
